@@ -1,0 +1,124 @@
+.cart {
+    margin-top: 100px;
+}
+
+.cart-items-title {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    color: gray;
+    font-size: max(1vw, 12px);
+    margin-bottom: 10px; /* Add margin bottom for spacing */
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f0f0f0; /* Light background color for items */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.cart-item img {
+    width: 70px;
+    height: 70px; /* Ensure consistent image size */
+    object-fit: cover; /* Maintain aspect ratio for images */
+    border-radius: 50%; /* Rounded image */
+    margin-right: 10px; /* Margin between image and text */
+}
+
+.cart-item p {
+    margin: 0;
+}
+
+.cart-item button {
+    background-color: rgb(208, 199, 216);
+    padding: 2px 1px;
+    border: none;
+    color: rgb(24, 14, 14);
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.cart-item button:hover {
+    transform: scale(1.05);
+}
+
+.cart-bottom{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: max(12vw,20px);
+}
+
+.cart-total{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-total-details{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(71, 70, 70);
+}
+
+.cart-total hr{
+    margin: 10px 0px;
+}
+
+.cart-total button{
+    border: none;
+    color: white;
+    background-color: tomato;
+    width: max(15vw,200px);
+    padding: 12px 0px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cart-promocode{
+    flex: 1;
+}
+
+.cart-promocode p{
+    color: #555;
+}
+
+.cart-promocode-input{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(240, 240, 236);
+    border-radius: 4px;
+}
+
+.cart-promocode-input input{
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+
+.cart-promocode-input button{
+    width: max(10vw,150px);
+    padding: 12px 5px;
+    background: rgb(39, 37, 37);
+    border: none;
+    color: white;
+    border-radius: 4px;
+}
+
+@media (max-width:750px){
+    .cart-bottom{
+        flex-direction: column-reverse;
+    }
+    .cart-promocode{
+        justify-content: start;
+    }
+}
